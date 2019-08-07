@@ -36,8 +36,8 @@
 						<h1>NASH82 EMPOWER</h1>
 						<li><a href="index.html">ABOUT</a></li>
 						<li><a href="page-blog-posts.html">SPEAKERS</a></li>
-						<li><a href="page-events.html">SCHEDULE</a></li>
-						<li><a href="page-pricing.html">TICKETS</a></li>
+						<li class="coming-soon"><a href="page-events.html">SCHEDULE</a></li>
+						<li class="coming-soon"><a href="page-pricing.html">TICKETS</a></li>
 						<li><a href="page-homepage-sample.html">The JHM AWARDS</a></li>
 						<li><a href="page-services-4-columns.html">SPONSORS</a></li>
 						<li><a href="page-contact-us.html">CONTACT US</a></li>
@@ -58,9 +58,8 @@
 						<h3 class="subtitle">Vancouver, BC</h3>
 
 						<!-- Slide Text -->
-						<h4 class="body">With the theme of “Empower,” 
-								this year’s conference reaffirms our belief that 
-								student media is media.</h4>
+						<h4 class="bodytext">Part of the Canadian University Press’s 80-plus-year tradition, NASH82 will be hosted by The Ubyssey — UBC’s independent student publication — at the Vancouver Marriott Pinnacle Downtown Hotel. 
+						</h4>
 					</li>
 					
 					<!-- End Slide 1 -->
@@ -70,84 +69,17 @@
         </div>
         <!-- End Homepage Slider -->
 <!-- about -->
-		<h5>With the theme of “Empower,” this year’s conference reaffirms our belief that student media is media. </h5>
-		<h5> We will offer workshops, panels and roundtables that amplify student journalists’ ability and responsibility 
+<div class="about-grids">
+	<h4>With the theme of “Empower,” 
+			this year’s conference reaffirms our belief that 
+			student media is media.</h4>
+		<h4> We will offer workshops, panels and roundtables that amplify student journalists’ ability and responsibility 
 		to report on difficult and emerging issues — sexual violence, hate speech, the environment, poverty, diversity and more
 		— with care. We will also highlight how student journalists can empower themselves to be heard in professional spaces, 
-		as well as how student papers can navigate change and challenges to their structure. </h5>
-		<h5>We look forward to supporting your growth and having you join The Ubyssey in our shenanigans!</h5>
+		as well as how student papers can navigate change and challenges to their structure. </h4>
+		<h4>We look forward to supporting your growth and having you join The Ubyssey in our shenanigans!</h4>
+		</div>
 <!-- //about -->
-
-		<!-- Testimonials -->
-	    <div class="section">
-			<!-- countdown -->
-<div class="clockdiv-container">
-	<div id="clockdiv">
-	<div>
-	<span class="days"></span>
-	<div class="smalltext">Days</div>
-	</div>
-	<div>
-	<span class="hours"></span>
-	<div class="smalltext">Hours</div>
-	</div>
-	<div>
-	<span class="minutes"></span>
-	<div class="smalltext">Minutes</div>
-	</div>
-	<div>
-	<span class="seconds"></span>
-	<div class="smalltext">Seconds</div>
-	</div>
-	</div>
-	</div>
-	<script>
-	function getTimeRemaining(endtime) {
-	var t = Date.parse(endtime) - Date.parse(new Date());
-	var seconds = Math.floor((t / 1000) % 60);
-	var minutes = Math.floor((t / 1000 / 60) % 60);
-	var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-	var days = Math.floor(t / (1000 * 60 * 60 * 24));
-	return {
-	'total': t,
-	'days': days,
-	'hours': hours,
-	'minutes': minutes,
-	'seconds': seconds
-	};
-	}
-	
-	function initializeClock(id, endtime) {
-	var clock = document.getElementById(id);
-	var daysSpan = clock.querySelector('.days');
-	var hoursSpan = clock.querySelector('.hours');
-	var minutesSpan = clock.querySelector('.minutes');
-	var secondsSpan = clock.querySelector('.seconds');
-	
-	function updateClock() {
-	var t = getTimeRemaining(endtime);
-	
-	daysSpan.innerHTML = t.days;
-	hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-	minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-	secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-	
-	if (t.total <= 0) {
-	clearInterval(timeinterval);
-	}
-	}
-	
-	updateClock();
-	var timeinterval = setInterval(updateClock, 1000);
-	}
-	
-	var deadline = new Date(Date.parse(new Date()) + 126 * 24 * 60 * 60 * 1000);
-	initializeClock('clockdiv', deadline);
-	</script>
-	<!-- //countdown -->
-	    </div>
-	    <!-- End Testimonials -->
-
 		
 		<!-- Call to Action Bar -->
 	    <div class="section section-white">
@@ -155,7 +87,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="calltoaction-wrapper">
-							<h3>See more information about our</h3> <a href="http://www.dragdropsite.com" class="btn btn-blue">TICKETS</a>
+							<h3>See more information about our</h3> <a href="page-404.html" class="btn btn-blue">TICKETS</a>
 						</div>
 					</div>
 				</div>
