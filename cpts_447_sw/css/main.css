@@ -366,16 +366,24 @@ a:hover {
 /*--------------------------------------------------------------------------
 +	Contact Us Style
 --------------------------------------------------------------------------*/
-#contact-us-map {
+.map iframe {
   height: 300px;
+  width: 100%;
   -webkit-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
   -moz-box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
   box-shadow: inset 0 1px #fff,0 0 8px #c8cfe6;
   color: inset 0 1px #fff,0 0 8px #c8cfe6;
 }
+
 .contact-us-details {
   margin: 20px 0;
   font-size: 0.9em;
+}
+
+.contact-us-blurb{
+  margin: 20px 0;
+  font-size: 1.2em;
+  text-align: center;
 }
 /*--------------------------------------------------------------------------
 +	Video Wrapper Style
