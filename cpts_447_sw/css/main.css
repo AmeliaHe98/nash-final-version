@@ -96,6 +96,8 @@ h4 {
   font-family: "Josefin Sans", sans-serif; 
   color: #53555c;
   margin-bottom: 10px;
+  text-align: justify;
+  line-height: 1.5em;
 }
 a {
   color: #4f8db3;
@@ -1955,10 +1957,10 @@ span.color-red {
 }
 
 #sequence h4 {
-  font-size: 20px;
+  font-size: 18px;
   color: #FFF;
-  text-align: center;
-    border: none;
+  text-align: justify;
+  border: none;
 }
 #sequence > .sequence-canvas > li {
   position: absolute;
@@ -2149,7 +2151,7 @@ span.color-red {
   font-size: 1.5em;
   text-align: justify;
   padding-right: 400px;
-  padding-left: 400px;
+  padding-left: 350px;
   padding-top: 20px;
   }
   
