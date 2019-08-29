@@ -90,9 +90,9 @@ event.target.parentElement.parentElement.style.display = 'none'
 //********************* LEVEL 4 SPEAKERS******************************************************************//
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target.classList.contains('modal') || event.target.classList.contains('lower-modal1')
-|| event.target.classList.contains('lower-modal2')|| event.target.classList.contains('lower-modal3')
-|| event.target.classList.contains('lower-modal4')) {
+if (event.target.classList.contains('modal') || event.target.classList.contains('lower-modal')
+|| event.target.classList.contains('lower-2-modal')|| event.target.classList.contains('lower-3-modal')
+|| event.target.classList.contains('lower-4-modal')) {
 event.target.style.display = "none";
 }
 }
