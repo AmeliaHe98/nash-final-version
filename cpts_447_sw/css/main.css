@@ -763,7 +763,7 @@ a:hover {
 +	Dialog box Style
 --------------------------------------------------------------------------*/
 /* The Modal (background) */
-.modal {
+.modal, .lower-modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -776,21 +776,48 @@ a:hover {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-.lower-modal {
+/* The Modal (background) */
+.lower-2-modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 0;
+  top: 30%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
+/* The Modal (background) */
+.lower-3-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 55%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-4-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 70%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -801,7 +828,7 @@ a:hover {
 }
 
 /* The Close Button */
-.close, .lower-close {
+.close, .lower-close, .lower-2-close, .lower-3-close, .lower-4-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -811,7 +838,13 @@ a:hover {
 .close:hover,
 .close:focus,
 .lower-close:hover,
- .lower-close:focus {
+.lower-close:focus,
+.lower-2-close:hover,
+.lower-2-close:focus,
+.lower-3-close:hover,
+.lower-3-close:focus,
+.lower-4-close:hover,
+.lower-4-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
