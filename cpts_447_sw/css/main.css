@@ -182,6 +182,17 @@ a:hover {
 /*--------------------------------------------------------------------------
 +	Pricing Table Style
 --------------------------------------------------------------------------*/
+.pricing img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+}
 .pricing-plan {
   float: left;
   text-align: center;
@@ -2531,6 +2542,9 @@ span.color-red {
   box-shadow: none;
   color: #FFF;
   white-space: nowrap;
+  margin-top: 3%;
+  margin-left: 45%;
+
 }
 .btn:hover {
   background: none repeat scroll 0 0 #3b3c41;
