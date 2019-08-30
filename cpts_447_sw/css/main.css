@@ -188,11 +188,6 @@ a:hover {
   margin-right: auto;
   width: 50%;
 }
-.button {
-  display: block;
-  max-width: 300px;
-  margin: auto;
-}
 .pricing-plan {
   float: left;
   text-align: center;
