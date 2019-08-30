@@ -88,6 +88,24 @@ event.target.parentElement.parentElement.style.display = 'none'
 }		
 
 //********************* LEVEL 4 SPEAKERS******************************************************************//
+//********************* LEVEL 5 SPEAKERS******************************************************************//
+var lowerBtns = document.getElementsByClassName("myLower5Btn");
+
+for(let i = 0; i < lowerBtns.length; i++) {
+lowerBtns[i].onclick = () => {
+document.getElementsByClassName('lower-5-modal')[i].style.display = 'block';
+}
+}
+
+
+var lowerCloseSpans = document.getElementsByClassName('lower-5-close')
+for(var i = 0; i < lowerCloseSpans.length; i++) {
+lowerCloseSpans[i].onclick = (event) => {
+event.target.parentElement.parentElement.style.display = 'none'
+}
+}		
+
+//********************* LEVEL 5 SPEAKERS******************************************************************//
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 if (event.target.classList.contains('modal') || event.target.classList.contains('lower-modal')
