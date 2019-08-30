@@ -794,7 +794,7 @@ a:hover {
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 18%;
+  top: 23%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -808,7 +808,7 @@ a:hover {
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 33%;
+  top: 43%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -822,7 +822,7 @@ a:hover {
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 50%;
+  top: 65%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -2515,7 +2515,138 @@ span.color-red {
 /*--------------------------------------------------------------------------
 +	Social Icon Style
 --------------------------------------------------------------------------*/
-
+.w3l_header_right {
+  float: none;
+  text-align: center;
+  }
+/*-- social-icons --*/
+ul.social-icons li {
+  display: inline-block;
+  }
+  .icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin-top: 5%;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  text-indent: -9999px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-border-radius: 25px;
+  }
+  .icon-border {
+  position: relative;
+  }
+  
+  .icon-border::before,
+  .icon-border::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  -ms-border-radius: 25px;
+  }
+  
+  .icon-border::before {
+  z-index: 1;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  }
+  
+  .icon-border::after {
+  z-index: 2;
+  }
+  
+  /* facebook */
+  .icon-border.facebook::before {
+  box-shadow:inset 0 0 0 48px #212121;
+  }
+  
+  .icon-border.facebook:hover::before {
+  box-shadow:inset 0 0 0 2px #0071c9;
+  }
+  
+  .icon-border.facebook::after {
+  background:url(../img/img-sp.png) no-repeat 8px 5px;
+  display:block;
+  }
+  .icon-border.facebook:hover::after {
+  background:url(../img/img-sp.png) no-repeat 8px -24px;
+  display:block;
+  }
+  
+  /* twitter */
+  .icon-border.twitter::before {
+  box-shadow:inset 0 0 0 48px #212121;
+  }
+  
+  .icon-border.twitter:hover::before {
+  box-shadow:inset 0 0 0 2px #0071c9;
+  }
+  
+  .icon-border.twitter::after {
+  background:url(../img/img-sp.png) no-repeat -21px 4px;
+  display:block;
+  }
+  .icon-border.twitter:hover::after {
+  background:url(../img/img-sp.png) no-repeat -21px -26px;
+  display:block;
+  }
+  
+  /* instagram */
+  .icon-border.instagram::before {
+  box-shadow: inset 0 0 0 48px #212121;
+  }
+  
+  .icon-border.instagram:hover::before {
+  box-shadow: inset 0 0 0 2px #0071c9;
+  }
+  
+  .icon-border.instagram::after {
+  background:url(../img/img-sp.png) no-repeat -51px 5px;
+  display:block;
+  }
+  .icon-border.instagram:hover::after {
+  background:url(../img/img-sp.png) no-repeat -51px -25px;
+  display:block;
+  }
+  
+  /*-- //social-icons --*/
+  /*-- header --*/
+.w3l_header_left{
+  float:left;
+  margin: .3em 0 0;
+  }
+  .w3l_header_left ul li{
+  display:inline-block;
+  margin-right:2em;
+  font-size:14px;
+  color:#999;
+  }
+  .w3l_header_left ul li span{
+  padding-right:1em;
+  }
+  .w3l_header_left ul li a{
+  color:rgba(188, 188, 188, 0.57);;
+  text-decoration:none;
+  }
+  .w3l_header_left ul li a:hover{
+  color:#0071c9;
+  }
+  .w3l_header_right{
+  float: right;
+  }
 /*--------------------------------------------------------------------------
 +	Buttons Style
 --------------------------------------------------------------------------*/
