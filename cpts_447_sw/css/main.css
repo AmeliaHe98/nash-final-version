@@ -774,13 +774,24 @@ a:hover {
 +	Dialog box Style
 --------------------------------------------------------------------------*/
 /* The Modal (background) */
-.modal, .lower-modal{
+.modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 60px; 
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 2%;
   left: 0;
-  top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -792,11 +803,10 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 23%;
+  top: 13%;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 90%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -806,11 +816,10 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 43%;
+  top: 23%;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 80%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -820,11 +829,10 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 65%;
+  top: 34%;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 70%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -834,11 +842,62 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
-  top: 75%;
+  top: 45%;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 60%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-6-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 55%;
+  width: 100%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-7-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 65%;
+  width: 100%; /* Full width */
+  height: 40%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-8-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 77%;
+  width: 100%; /* Full width */
+  height: 30%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* The Modal (background) */
+.lower-9-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 87%;
+  width: 100%; /* Full width */
+  height: 20%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -853,7 +912,7 @@ a:hover {
 }
 
 /* The Close Button */
-.close, .lower-close, .lower-2-close, .lower-3-close, .lower-4-close, .lower-5-close{
+.close, .lower-close, .lower-2-close, .lower-3-close, .lower-4-close, .lower-5-close, .lower-6-close, .lower-7-close, .lower-8-close, .lower-9-close{
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -871,7 +930,15 @@ a:hover {
 .lower-4-close:hover,
 .lower-4-close:focus,
 .lower-5-close:hover,
-.lower-5-close:focus  {
+.lower-5-close:focus,
+.lower-6-close:hover,
+.lower-6-close:focus,
+.lower-7-close:hover,
+.lower-7-close:focus,
+.lower-8-close:hover,
+.lower-8-close:focus,
+.lower-9-close:hover,
+.lower-9-close:focus    {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -1849,6 +1916,7 @@ span.color-red {
   font-size: 1.6em;
   margin-bottom: 0;
   text-transform: none;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------------------

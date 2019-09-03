@@ -106,11 +106,85 @@ event.target.parentElement.parentElement.style.display = 'none'
 }		
 
 //********************* LEVEL 5 SPEAKERS******************************************************************//
+//********************* LEVEL 6 SPEAKERS******************************************************************//
+var lowerBtns = document.getElementsByClassName("myLower6Btn");
+
+for(let i = 0; i < lowerBtns.length; i++) {
+lowerBtns[i].onclick = () => {
+document.getElementsByClassName('lower-6-modal')[i].style.display = 'block';
+}
+}
+
+
+var lowerCloseSpans = document.getElementsByClassName('lower-6-close')
+for(var i = 0; i < lowerCloseSpans.length; i++) {
+lowerCloseSpans[i].onclick = (event) => {
+event.target.parentElement.parentElement.style.display = 'none'
+}
+}		
+
+//********************* LEVEL 6 SPEAKERS******************************************************************//
+//********************* LEVEL 7 SPEAKERS******************************************************************//
+var lowerBtns = document.getElementsByClassName("myLower7Btn");
+
+for(let i = 0; i < lowerBtns.length; i++) {
+lowerBtns[i].onclick = () => {
+document.getElementsByClassName('lower-7-modal')[i].style.display = 'block';
+}
+}
+
+
+var lowerCloseSpans = document.getElementsByClassName('lower-7-close')
+for(var i = 0; i < lowerCloseSpans.length; i++) {
+lowerCloseSpans[i].onclick = (event) => {
+event.target.parentElement.parentElement.style.display = 'none'
+}
+}		
+
+//********************* LEVEL 7 SPEAKERS******************************************************************//
+//********************* LEVEL 8 SPEAKERS******************************************************************//
+var lowerBtns = document.getElementsByClassName("myLower8Btn");
+
+for(let i = 0; i < lowerBtns.length; i++) {
+lowerBtns[i].onclick = () => {
+document.getElementsByClassName('lower-8-modal')[i].style.display = 'block';
+}
+}
+
+
+var lowerCloseSpans = document.getElementsByClassName('lower-8-close')
+for(var i = 0; i < lowerCloseSpans.length; i++) {
+lowerCloseSpans[i].onclick = (event) => {
+event.target.parentElement.parentElement.style.display = 'none'
+}
+}		
+
+//********************* LEVEL 8 SPEAKERS******************************************************************//
+//********************* LEVEL 9 SPEAKERS******************************************************************//
+var lowerBtns = document.getElementsByClassName("myLower9Btn");
+
+for(let i = 0; i < lowerBtns.length; i++) {
+lowerBtns[i].onclick = () => {
+document.getElementsByClassName('lower-9-modal')[i].style.display = 'block';
+}
+}
+
+
+var lowerCloseSpans = document.getElementsByClassName('lower-9-close')
+for(var i = 0; i < lowerCloseSpans.length; i++) {
+lowerCloseSpans[i].onclick = (event) => {
+event.target.parentElement.parentElement.style.display = 'none'
+}
+}		
+
+//********************* LEVEL 9 SPEAKERS******************************************************************//
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 if (event.target.classList.contains('modal') || event.target.classList.contains('lower-modal')
 || event.target.classList.contains('lower-2-modal')|| event.target.classList.contains('lower-3-modal')
-|| event.target.classList.contains('lower-4-modal')) {
+|| event.target.classList.contains('lower-4-modal')|| event.target.classList.contains('lower-5-modal')
+|| event.target.classList.contains('lower-6-modal')|| event.target.classList.contains('lower-7-modal')
+|| event.target.classList.contains('lower-8-modal')|| event.target.classList.contains('lower-9-modal')) {
 event.target.style.display = "none";
 }
 }
